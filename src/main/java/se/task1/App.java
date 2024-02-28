@@ -6,6 +6,8 @@ public class App
 {
     public static void main( String[] args )
     {
+        //__________________________Task 1_______________________________________//
+
         /*
          1. Write a Java program :
          - to print 'Hello' on screen and then print your name on a separate line.
@@ -13,13 +15,19 @@ public class App
          Expected result:
          Hello Ali!
          */
+         /*
         System.out.println("Task 1:");
         System.out.print( "Hello " );
         System.out.println( "Ali!");
 
+          */
+
+        //____________________________Task 2_____________________________________//
+
         /*
         2. Create a program that takes a year as input from user and
         print if it’s leap year or not. */
+         /*
         System.out.println("***************");
         System.out.println("Task 2:");
         System.out.println("Write the year to see if it is leap year or not and press Enter:");
@@ -31,6 +39,11 @@ public class App
             System.out.println(year +" is NOT a leap year.");
         }
         System.out.println("***************");
+
+          */
+
+        //_____________________________Task 3____________________________________//
+
         /*
         3. Write a Java program to print the sum/multiplication/division and subtraction
         of two numbers Expected result:
@@ -40,6 +53,7 @@ public class App
         24 / 6 = 4
         55 – 12 = 43
          */
+        /*
         System.out.println("Operation:");
         System.out.print("Write the first number and press Enter: ");
         Scanner scanFirstNumber = new Scanner(System.in);
@@ -66,6 +80,38 @@ public class App
                 System.out.println("This operation not available");
                 break;
         }
+
+         */
+        System.out.println("***************");
+
+        //_____________________________Task 4____________________________________//
+        /*
+        Write a Java program that prints the average of three numbers Expected result:
+
+        (23 + 11 + 77) / 3 = 37
+         */
+
+        System.out.println("Operation:");
+        System.out.print("Write the 1th number and press Enter: ");
+        Scanner scanFirstNewNumber = new Scanner(System.in);
+        int firstNewNumber = scanFirstNewNumber.nextInt();
+        System.out.print("Write the 2th number and press Enter: ");
+        Scanner scanSecondNewNumber = new Scanner(System.in);
+        int secondNewNumber = scanSecondNewNumber.nextInt();
+        System.out.print("Write the 3th number and press Enter: ");
+        Scanner scanThirdNewNumber = new Scanner(System.in);
+        int thirdNewNumber = scanThirdNewNumber.nextInt();
+        System.out.print("Write the 4th number and press Enter: ");
+        Scanner scanFourthNewNumber = new Scanner(System.in);
+        int fourthNewNumber = scanFourthNewNumber.nextInt();
+
+        int result = (firstNewNumber + secondNewNumber + thirdNewNumber) / fourthNewNumber;
+        String first = '(' +String.valueOf(firstNewNumber) + '+' +String.valueOf(secondNewNumber) + '+' +
+                        String.valueOf(thirdNewNumber) + ')' + '/' + String.valueOf(fourthNewNumber) ;
+        System.out.println(String.valueOf(first));
+        System.out.println(String.valueOf(result));
+
+
 
 
 
