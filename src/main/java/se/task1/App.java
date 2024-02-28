@@ -122,12 +122,15 @@ public class App
         String userName = scanUserName.next();
         System.out.println("Hello " + userName);
 
+        System.out.println("***************");
+
         //_____________________________Task 6____________________________________//
 
         /*
         6. Create a program that asks user to input two numbers and print
          the sum/multiplication/division and subtraction of given numbers
          */
+        System.out.println("Do sum/multiplication/division/subtraction in one click:");
         System.out.print("Write the 1th number: ");
         Scanner scan_FirstNum = new Scanner(System.in);
         int firstNum  = scan_FirstNum.nextInt();
@@ -135,9 +138,32 @@ public class App
         System.out.print("Write the 2th number: ");
         Scanner scan_SecondNum = new Scanner(System.in);
         int secondNum = scan_SecondNum.nextInt();
+
         System.out.println(firstNum + " + " + secondNum + " = " + (firstNum + secondNum));
         System.out.println(firstNum + " - " + secondNum + " = " + (firstNum - secondNum));
         System.out.println(firstNum + " * " + secondNum + " = " + (firstNum * secondNum));
+        System.out.println(firstNum + " / " + secondNum + " = " + (firstNum / secondNum));
+
+        System.out.println("***************");
+
+        //_____________________________Task 7____________________________________//
+
+                /*
+        7. Create a program that converts seconds to hours,
+        minutes and seconds Input seconds:
+        86399 Expected
+
+        output: 23:59:59
+         */
+        System.out.println("Convert Seconds ---> Hours:Minutes:Seconds");
+        System.out.print("Write here: ");
+        Scanner scanSecond = new Scanner(System.in);
+        int second = scanSecond.nextInt();
+        int numOfHour = second/3600;
+        int restSecInMinute = (second%3600)/60;
+        int restSecond = restSecInMinute%60;
+        System.out.println("hh:mm:ss");
+        System.out.println(numOfHour+":"+restSecInMinute+":"+restSecond);
     }
 
 
