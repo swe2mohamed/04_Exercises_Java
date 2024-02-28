@@ -1,4 +1,5 @@
 package se.task1;
+import java.util.Random;
 import java.util.Scanner;
 
 
@@ -67,13 +68,13 @@ public class App
                 System.out.println(firstNumber + secondNumber);
                 break;
             case '*':
-                System.out.println(firstNumber * secondNumber);
+                System.out.println("Result: "+ (firstNumber * secondNumber));
                 break;
             case '-':
-                System.out.println(firstNumber - secondNumber);
+                System.out.println("Result: " + (firstNumber - secondNumber));
                 break;
             case '/':
-                System.out.println(firstNumber / secondNumber);
+                System.out.println("Result: "+ (firstNumber / secondNumber));
                 break;
             default:
                 System.out.println("This operation not available");
@@ -164,6 +165,41 @@ public class App
         int restSecond = restSecInMinute%60;
         System.out.println("hh:mm:ss");
         System.out.println(numOfHour+":"+restSecInMinute+":"+restSecond);
+
+        System.out.println("***************");
+
+        //_____________________________Task 8____________________________________//
+
+         /*
+        8. Write a program that first generates a random number
+        between 1 and 500 and stores it into a variable (see the Random class).
+        Then let the user make a guess for which number it is.
+        If the user types the correct number, he should be presented with a message
+        (including the number of guesses he has made). If he types a number that is greater or
+        smaller than the given number, display either “Your guess was too small” or “Your guess was too big”.
+        The program should keep executing until the user input the correct guess.
+         */
+        int start = 0;
+        int end = 500;
+        Random random = new Random();
+        int guessNum = random.nextInt(end -start);
+        System.out.println("Guess the number between " + start + " and " + end + ": ");
+        System.out.print("Guess: ");
+        boolean isNotRight = true;
+        while (isNotRight){
+            Scanner scanUser = new Scanner(System.in);
+            int user = scanUser.nextInt();
+            if (user == guessNum) {
+                System.out.println("Right");
+                isNotRight = false;
+            } else if (user > guessNum) {
+                System.out.println("Your guess was too big");
+                System.out.print("Try again: ");
+            } else {
+                System.out.println("Your guess was too small");
+                System.out.print("Try again: ");
+            }
+        }
     }
 
 
