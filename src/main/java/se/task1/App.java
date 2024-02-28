@@ -108,5 +108,20 @@ public class App
         String stringResult = "(" + a_num + "+" + b_num + "+" +
                         c_num + ")/" + d_num;
         System.out.println(stringResult + " = " + result);
+
+        System.out.println("***************");
+
+        //_____________________________Task 5____________________________________//
+        /*
+        5. Create a program that asks user to input his/her name and store
+        it in a variable instead of having fixed name.
+        Then print ‘Hello username’ where username is what you got from user as input.
+         */
+        System.out.print("What is your name: ");
+        Scanner scanUserName = new Scanner(System.in);
+        String userName = scanUserName.next();
+        System.out.println("Hello " + userName);
     }
+
+
 }
