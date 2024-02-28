@@ -121,6 +121,23 @@ public class App
         Scanner scanUserName = new Scanner(System.in);
         String userName = scanUserName.next();
         System.out.println("Hello " + userName);
+
+        //_____________________________Task 6____________________________________//
+
+        /*
+        6. Create a program that asks user to input two numbers and print
+         the sum/multiplication/division and subtraction of given numbers
+         */
+        System.out.print("Write the 1th number: ");
+        Scanner scan_FirstNum = new Scanner(System.in);
+        int firstNum  = scan_FirstNum.nextInt();
+
+        System.out.print("Write the 2th number: ");
+        Scanner scan_SecondNum = new Scanner(System.in);
+        int secondNum = scan_SecondNum.nextInt();
+        System.out.println(firstNum + " + " + secondNum + " = " + (firstNum + secondNum));
+        System.out.println(firstNum + " - " + secondNum + " = " + (firstNum - secondNum));
+        System.out.println(firstNum + " * " + secondNum + " = " + (firstNum * secondNum));
     }
 
 
