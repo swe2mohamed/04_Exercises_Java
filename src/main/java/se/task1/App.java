@@ -15,19 +15,19 @@ public class App
          Expected result:
          Hello Ali!
          */
-         /*
+
         System.out.println("Task 1:");
         System.out.print( "Hello " );
         System.out.println( "Ali!");
 
-          */
+
 
         //____________________________Task 2_____________________________________//
 
         /*
         2. Create a program that takes a year as input from user and
         print if it’s leap year or not. */
-         /*
+
         System.out.println("***************");
         System.out.println("Task 2:");
         System.out.println("Write the year to see if it is leap year or not and press Enter:");
@@ -40,7 +40,6 @@ public class App
         }
         System.out.println("***************");
 
-          */
 
         //_____________________________Task 3____________________________________//
 
@@ -53,12 +52,12 @@ public class App
         24 / 6 = 4
         55 – 12 = 43
          */
-        /*
-        System.out.println("Operation:");
-        System.out.print("Write the first number and press Enter: ");
+
+        System.out.println("Operation two numbers : + , - , / , * ");
+        System.out.print("Write the 1th number and press Enter: ");
         Scanner scanFirstNumber = new Scanner(System.in);
         int firstNumber = scanFirstNumber.nextInt();
-        System.out.print("Write the second number and press Enter: ");
+        System.out.print("Write the 2th number and press Enter: ");
         Scanner scanSecondNumber = new Scanner(System.in);
         int secondNumber = scanSecondNumber.nextInt();
         System.out.print("Write the operation and press Enter: ");
@@ -81,7 +80,7 @@ public class App
                 break;
         }
 
-         */
+
         System.out.println("***************");
 
         //_____________________________Task 4____________________________________//
@@ -91,29 +90,23 @@ public class App
         (23 + 11 + 77) / 3 = 37
          */
 
-        System.out.println("Operation:");
-        System.out.print("Write the 1th number and press Enter: ");
-        Scanner scanFirstNewNumber = new Scanner(System.in);
-        int firstNewNumber = scanFirstNewNumber.nextInt();
-        System.out.print("Write the 2th number and press Enter: ");
-        Scanner scanSecondNewNumber = new Scanner(System.in);
-        int secondNewNumber = scanSecondNewNumber.nextInt();
-        System.out.print("Write the 3th number and press Enter: ");
-        Scanner scanThirdNewNumber = new Scanner(System.in);
-        int thirdNewNumber = scanThirdNewNumber.nextInt();
-        System.out.print("Write the 4th number and press Enter: ");
-        Scanner scanFourthNewNumber = new Scanner(System.in);
-        int fourthNewNumber = scanFourthNewNumber.nextInt();
+        System.out.println("Operation: (a + b + c ) / d = e");
+        System.out.print("Write the 'a' number and press Enter: ");
+        Scanner a = new Scanner(System.in);
+        int a_num = a.nextInt();
+        System.out.print("Write the 'b' number and press Enter: ");
+        Scanner b = new Scanner(System.in);
+        int b_num = b.nextInt();
+        System.out.print("Write the 'c' number and press Enter: ");
+        Scanner c = new Scanner(System.in);
+        int c_num = c.nextInt();
+        System.out.print("Write the 'd' number and press Enter: ");
+        Scanner d = new Scanner(System.in);
+        int d_num = d.nextInt();
 
-        int result = (firstNewNumber + secondNewNumber + thirdNewNumber) / fourthNewNumber;
-        String first = '(' +String.valueOf(firstNewNumber) + '+' +String.valueOf(secondNewNumber) + '+' +
-                        String.valueOf(thirdNewNumber) + ')' + '/' + String.valueOf(fourthNewNumber) ;
-        System.out.println(String.valueOf(first));
-        System.out.println(String.valueOf(result));
-
-
-
-
-
+        int result = (a_num + b_num + c_num) / d_num;
+        String stringResult = "(" + a_num + "+" + b_num + "+" +
+                        c_num + ")/" + d_num;
+        System.out.println(stringResult + " = " + result);
     }
 }
